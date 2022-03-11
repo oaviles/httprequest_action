@@ -1,0 +1,21 @@
+name: 'HTTP POST Request'
+description: 'Actions HTTP POST URL'
+inputs:
+  key:  # key of input
+    description: 'API Managment Subscription Key'
+    required: false
+    default: 'Your Subscription Key'
+  path:  # path of input
+    description: 'API Managment path'
+    required: false
+    default: 'Your Subscription Path'
+  url:  # url of input
+    description: 'API URL'
+    required: true
+    default: 'https://docs.github.com/en/rest/reference/actions#re-run-a-workflow'
+outputs:
+  status: # id of output
+    description: 'API Call StatusCode'
+runs:
+  using: 'node16'
+  main: 'index.js'
