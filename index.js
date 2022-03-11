@@ -4,9 +4,9 @@ const https = require('https')
 
 try {
 
-    const data = JSON.stringify({
-        event: 'Calling the API',
-      })
+    //const data = JSON.stringify({
+    //    event: 'Calling the API',
+    //  })
 
       console.log(`myURL: ${core.getInput('url')}`);
 
@@ -16,8 +16,7 @@ try {
         path: core.getInput('path'),
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Content-Length': data.length
+          'Content-Type': 'application/json'
         }
       }
 
