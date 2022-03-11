@@ -8,7 +8,7 @@ try {
         event: 'Calling the API',
       })
 
-      console.log(core.getInput('url'));
+      console.log(`myURL: ${core.getInput('url')}`);
 
     const options = {
         hostname: core.getInput('url'),
