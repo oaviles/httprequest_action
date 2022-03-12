@@ -12,8 +12,7 @@ try {
         path: core.getInput('path'),
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Ocp-Apim-Subscription-Key': `'${core.getInput('key')}'`
+          'Content-Type': 'application/json'
         }
       }
 
