@@ -4,6 +4,10 @@ const https = require('https')
 
 try {
 
+      const data = JSON.stringify({
+        event: 'Calling the API',
+      })
+
       console.log(`myURL: ${core.getInput('url')}`);
 
     const options = {
