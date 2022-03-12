@@ -4,10 +4,6 @@ const https = require('https')
 
 try {
 
-    //const data = JSON.stringify({
-    //    event: 'Calling the API',
-    //  })
-
       console.log(`myURL: ${core.getInput('url')}`);
 
     const options = {
@@ -16,7 +12,8 @@ try {
         path: core.getInput('path'),
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Ocp-Apim-Subscription-Key': core.getInput('key')
         }
       }
 
