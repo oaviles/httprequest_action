@@ -13,7 +13,7 @@ try {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Ocp-Apim-Subscription-Key': core.getInput('key')
+          'Ocp-Apim-Subscription-Key': `${core.getInput('key')}`
         }
       }
 
